@@ -1,4 +1,4 @@
-package com.example.nisteveripaymentapp
+package com.example.nisteveripaymentapp.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
