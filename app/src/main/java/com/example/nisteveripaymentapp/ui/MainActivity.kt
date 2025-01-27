@@ -1,49 +1,53 @@
 package com.example.nisteveripaymentapp.ui
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.example.nisteveripaymentapp.R
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.State
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.nisteveripaymentapp.ui.theme.NISTEVERIPaymentAppTheme
 
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?){
+        // Add Splash Screen
+        val splashScreen = installSplashScreen()
+
+
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            NISTEVERIPaymentAppTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Sachin............",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+        setContentView(R.layout.activity_main)
+
+        splashScreen.setKeepOnScreenCondition {
+            false // This means, no extra delay and proceed immediately
         }
+
+
+        // Logic -- To be updated.
     }
 }
 
-@Composable
-fun Greeting(name:String,modifier:Modifier=Modifier){
-    val displayName = if(name.isBlank()) "" else name
-    Text(
-        text = "Hello$displayName",
-        modifier = modifier
-    )
-}
 
 
-@Preview(showBackground = false)
-@Composable
-fun GreetingPreview() {
-    NISTEVERIPaymentAppTheme {
-        Greeting("Sachin")
-    }
-}
+
+//
+//@Composable
+//fun Greeting(name:String,modifier:Modifier=Modifier){
+//    val displayName = if(name.isBlank()) "" else name
+//    Text(
+//        text = "Hello$displayName",
+//        modifier = modifier
+//    )
+//}
+//
+//
+//@Preview(showBackground = false)
+//@Composable
+//fun GreetingPreview() {
+//    NISTEVERIPaymentAppTheme {
+//        Greeting("Sachin")
+//    }
+//}

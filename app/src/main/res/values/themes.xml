@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.NISTEVERIPaymentApp" parent="android:Theme.Material.Light.NoActionBar" />
+<!--    <style name="Theme.NISTEVERIPaymentApp" parent="android:Theme.Material.Light.NoActionBar" />-->
+
+<!--    Base App Theme -->
+    <style name="Theme.NISTEVERIPaymentApp" parent="Theme.AppCompat.DayNight.NoActionBar">
+<!--        Main App Theme -->
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
+
+<!--        To be updated -->
+    </style>
+
+
+<!--    Splash Theme -->
+<style name="Theme.NISTEVERIPaymentApp.Splash" parent="Theme.SplashScreen">
+
+<!--    Logo displayed during the splash -->
+    <item name="windowSplashScreenAnimatedIcon">@drawable/ic_nidec_front_page_logo</item>
+
+<!--    Background color for splash screen -->
+    <item name="windowSplashScreenBackground">@color/teal_200</item>
+
+
+</style>
+
+
 </resources>
+
+
