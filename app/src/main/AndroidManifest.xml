@@ -12,15 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NISTEVERIPaymentApp"
         tools:targetApi="31">
+
+
+<!--        Logo Activity with MAIN/LAUNCHER -->
+        <activity
+            android:name=".ui.LogoActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NISTEVERIPaymentApp.LogoFullscreen"
+            android:screenOrientation="landscape"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+<!--        This is will MainActivity -> To be Updated -->
+
         <activity
             android:name=".ui.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.NISTEVERIPaymentApp.Splash">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:screenOrientation="landscape"
+            >
+
         </activity>
     </application>
 

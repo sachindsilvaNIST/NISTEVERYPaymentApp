@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        splashScreen.setKeepOnScreenCondition {
-            true // This means, no extra delay and proceed immediately
-        }
+//
+//        splashScreen.setKeepOnScreenCondition {
+//            true // This means, no extra delay and proceed immediately
+//        }
 
 
         // Logic -- To be updated.
