@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.ui.Modifier
+
 import androidx.compose.ui.tooling.preview.Preview
 
 
@@ -22,32 +23,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         splashScreen.setKeepOnScreenCondition {
-            false // This means, no extra delay and proceed immediately
+            true // This means, no extra delay and proceed immediately
         }
 
 
         // Logic -- To be updated.
     }
 }
-
-
-
-
-//
-//@Composable
-//fun Greeting(name:String,modifier:Modifier=Modifier){
-//    val displayName = if(name.isBlank()) "" else name
-//    Text(
-//        text = "Hello$displayName",
-//        modifier = modifier
-//    )
-//}
-//
-//
-//@Preview(showBackground = false)
-//@Composable
-//fun GreetingPreview() {
-//    NISTEVERIPaymentAppTheme {
-//        Greeting("Sachin")
-//    }
-//}

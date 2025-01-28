@@ -16,10 +16,10 @@
 <style name="Theme.NISTEVERIPaymentApp.Splash" parent="Theme.SplashScreen">
 
 <!--    Logo displayed during the splash -->
-    <item name="windowSplashScreenAnimatedIcon">@drawable/ic_nidec_front_page_logo</item>
+    <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
 
 <!--    Background color for splash screen -->
-    <item name="windowSplashScreenBackground">@color/teal_200</item>
+    <item name="windowSplashScreenBackground">@color/black</item>
 
 
 </style>
